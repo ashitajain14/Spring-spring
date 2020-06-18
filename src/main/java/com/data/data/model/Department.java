@@ -5,10 +5,10 @@ import java.util.Set;
 
 //import lombok.AllArgsConstructor;
 import lombok.Data;
-//import lombok.NoArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import org.neo4j.ogm.annotation.GeneratedValue;
+//import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
@@ -17,12 +17,12 @@ import org.neo4j.ogm.annotation.Relationship;
 @Data
 @ToString
 // @AllArgsConstructor
-// @NoArgsConstructor
+@NoArgsConstructor
 public class Department {
-    @Id
-	@GeneratedValue
-	private Long entityId;
-
+    // @Id
+	// @GeneratedValue
+	// private Long entityId;
+	@Id
 	public String name;
 
 	public String location;
