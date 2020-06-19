@@ -35,7 +35,7 @@ public class DepartmentController {
     @GetMapping("/api/department")
     private List<Department> fetchDepartment()
     {
-         return service.fetchDepartment();
+         return fetchDepartment();
     }
     
 }
