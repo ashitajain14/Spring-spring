@@ -6,12 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 //import controller.DepartmentController;
 
-
 @SpringBootApplication
-//@ComponentScan(basePackages={"com.data.data.controller.DepartmentController"})
+// @ComponentScan(basePackages={"com.data.data.controller.DepartmentController"})
 public class DataApplication {
 
-	public static void main(String[] args) throws Exception{
+	public static void main(String[] args) throws Exception {
 		SpringApplication.run(DataApplication.class, args);
 	}
 

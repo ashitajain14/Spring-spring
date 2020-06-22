@@ -12,23 +12,19 @@ import lombok.ToString;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
-//import org.springframework.beans.factory.annotation.Autowired;
 
 @NodeEntity
 @Data
 @ToString
 // @AllArgsConstructor
 @NoArgsConstructor
-
-public class Department {
+public class Functionality {
     // @Id
-	// @GeneratedValue
-	// private Long entityId;
-	@Id
-	public String name;
+    // @GeneratedValue
+    // private Long entityId;
+    @Id
+    public String name;
 
-	public String location;
-	
-	@Relationship(type = "has_division", direction = Relationship.INCOMING)
-	private Set<Divisions> divisions = new HashSet<Divisions>();
+    @Relationship(type = "has_service", direction = Relationship.INCOMING)
+    private Set<Services> services = new HashSet<Services>();
 }

@@ -1,0 +1,95 @@
+{
+  "divisions": [
+    {
+      "functionality": [
+        {
+          "name": "E-invoice",
+          "services": [
+            {
+              "gitlab_url": "one.com",
+              "mongo": [
+                {
+                  "collection": [
+                    {
+                      "name": "xxiap034_EInvoice_Logger"
+                    }
+                  ],
+                  "name": "mongo11"
+                },
+                {
+                  "collection": [
+                    {
+                      "name": "xxiap035_EInvoice_Logger"
+                    }
+                  ],
+                  "name": "mongo12"
+                }
+              ],
+              "name": "xxiap034-novora-e-invoice-loader-service",
+              "oracle": [
+                {
+                  "name": "Oracle 01"
+                }
+              ],
+              "project_id": "project id 01",
+              "rabbit": [
+                {
+                  "mq": [
+                    {
+                      "name": "Q.PRISM.ED810_INVOICE_DATA_RES"
+                    },
+                    {
+                      "name": "Q.PRISM.ED811_INVOICE_DATA_RES"
+                    }
+                  ],
+                  "name": "Rabbit 1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cost Recovery",
+          "services": [
+            {
+              "gitlab_url": "two.com",
+              "mongo": [
+                {
+                  "collection": [
+                    {
+                      "name": "xxiap03"
+                    }
+                  ],
+                  "name": "mongo21"
+                }
+              ],
+              "name": "xxiap034-e-invoice-status-check-service",
+              "oracle": [
+                {
+                  "name": "Oracle 02"
+                }
+              ],
+              "project_id": "project id 02",
+              "rabbit": [
+                {
+                  "mq": [
+                    {
+                      "name": "Q.PRISM.ED810"
+                    }
+                  ],
+                  "name": "Rabbit 2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "name": "Inventory"
+    },
+    {
+      "name": "Procurement"
+    }
+  ],
+  "location": "Hyderabad",
+  "name": "UIP"
+}
